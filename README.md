@@ -1,97 +1,66 @@
-# Icon Planet
+# <img src="assets/icon-planet.png" width="50" style="vertical-align: middle;" alt="icon mod"></img> Icon Map
 
-A code mod for [Spaceflight Simulator](https://store.steampowered.com/app/1718870/) (SFS) that replaces the plain map dots with planet icons built from real planet data (textures, water, rings, terrain, clouds).
-
-**Author:** Luna Tomato  
+A code mod for [Spaceflight Simulator](https://store.steampowered.com/app/1718870/) (SFS) It changes the planet icons on the map to look better
 
 ## Screenshots
 
-![Smooth mode](assets/screenshot_smooth.png)
-
-![High mode](assets/screenshot_high.png)
-
-![Custom solar system](assets/screenshot_custom.png)
+![Screenshots](assets/1791770080342.png)
 
 ---
 
 ## 1. About the mod
 
-The base game shows planets on the map as simple dots. Icon Planet draws each planet using:
+Icon Planet changes how planets are displayed on the map. Instead of using the same bland circles for every type of planet, you get distinct icons representing features like water, terrain, clouds, and fog
+The workflow utilizes various mask files for rendering, such as water masks or cloud masks
+The mod features two modes: Smooth and High
 
-- Planet surface texture  
-- Oceans (water mask + colors)  
-- Rings (when the planet has them)  
-- Terrain outline  
-- Front clouds (depending on mode)  
+**Smooth**
+- Water covers the entire planet
+- Soft planet textures
+- Color tones based on "mapColor"
+- Faint rings
+- For planets lacking terrain, clouds are used for the visual display
 
-Works with the **default solar system** and **custom solar systems**.
-
-### Modes (press **P**)
-
-| Mode | Description |
-|------|-------------|
-| **Smooth** | Clean look across the whole planet; front clouds only on planets without terrain. Default when you start the game. |
-| **High** | More detail, including haze and clouds. |
-| **Default** | Stock game dots (mod drawing off). |
-
-The last mode is saved to `config.txt`.
+![Smooth1](assets/1791770197508.png)
+![Smooth2](assets/1791770255676.png)
 
 ---
+
+**High**
+- Planet-wide water and shallow water depth
+- Full planetary textures
+- Planetary atmosphere/fog
+- Realistic rings
+- Visible clouds
+
+![High1](assets/1791771171624.png)
+![High2](assets/1791771161316.png)
 
 ## 2. How it works & how to use
 
-1. Install the mod and open a world  
-2. Open the **map**  
-3. Press **P** to cycle: Smooth → High → Default  
+1. Open the **map**  
+2. Press **P** to cycle icons  
 
-Change the key in **Settings → Keybindings**.
-
-If something fails while generating an icon, the mod falls back to the stock dot so the game does not break. Details go to `Player.log` (search for `IconPlanet`).
+You can change the key in **Settings** anytime
 
 ---
 
-## 3. Config (`config.txt`)
+## 3. Mod support
 
-Place next to `IconPlanet.dll` in the mod folder. No rebuild needed after edits.
+As mentioned earlier, this mod reads mask files rather than using pre-made images, so it supports other mods!
+Simply install custom Solar System and give it a try
 
-| Key | Meaning |
-|-----|---------|
-| **TextureSize** | Icon resolution / sharpness |
-| **MinVisiblePx** | Below this on-screen size (px), show the stock dot; above it, fade the icon in |
-| **TerrainFadePx** | When zoomed in past this size, fade the icon so the real planet mesh shows (avoids broken close-up). `0` = never fade |
-| **Mode** | `smooth` / `high` / `default` |
-| **ShowClouds** | Front clouds on/off (Smooth still limits clouds to planets without terrain) |
-| **FullDiscTexture** | Try flipping if a planet’s colors look wrong |
-| **Enabled** | `false` disables the mod drawing |
+![Custom1](assets/1791771522633.png)
 
----
-
-## 4. Installation
-
-1. Download **IconPlanet.dll** (and `config.txt` if provided) from [Releases](https://github.com/tomato9946/Icon-Planet/releases)  
-2. Put them in:  
-   `Spaceflight Simulator Game/Mods/IconPlanet/`  
-3. Start the game  
-
-Guide: [Code Mod Installation | SFS Modding Guide](https://kojamori.github.io/SFS-Modding-Guide/getting-started/installation/code-mods)
-
-### Build from source
-
-1. Copy DLLs from `Spaceflight Simulator_Data/Managed` into `Dependencies/`  
-2. Copy `IconPlanet/env.props.example` → `IconPlanet/env.props`  
-3. Open `IconPlanet.sln` → Build **Release**  
-
----
-
-## Links
-
-- [Releases (download)](https://github.com/tomato9946/Icon-Planet/releases)  
-- [YouTube](https://www.youtube.com/channel/UCv2v5wErevqbt4HJkFUhe2A)  
-- [SFS Thailand Discord](https://discord.gg/7g6v8Z9k)  
+![end](assets/index.png)
 
 ## License
 
 Non-commercial use only — see the [LICENSE](LICENSE) file.
 
-You may use, modify, and share this mod for free community purposes.  
+You may use, modify, and share this mod for free community purposes.
 Selling or using it for profit is not allowed without permission.
+# Authorship & Credits
+
+* <img src="assets/luna_tomato_pfp.png" width="100" style="vertical-align: middle;" alt="Luna Tomato's avatar"></img> **Luna Tomato**
+  * [GitHub Profile](https://github.com/tomato9946) | [YouTube Channel](https://www.youtube.com/channel/UCv2v5wErevqbt4HJkFUhe2A) | [Spaceflight Simulator Thailand Discord](https://discord.gg/7g6v8Z9k) | [Forums Profile](https://sfsforum.com/index.php?members/rotten-tomato.26818/)
