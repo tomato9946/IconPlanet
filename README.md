@@ -63,4 +63,4 @@ Selling or using it for profit is not allowed without permission.
 # Authorship & Credits
 
 * <img src="assets/luna_tomato_pfp.png" width="100" style="vertical-align: middle;" alt="Luna Tomato's avatar"></img> **Luna Tomato**
-  * [GitHub Profile](https://github.com/tomato9946) | [YouTube Channel](https://www.youtube.com/channel/UCv2v5wErevqbt4HJkFUhe2A) | [Spaceflight Simulator Thailand Discord](https://discord.gg/7g6v8Z9k) | [Forums Profile](https://sfsforum.com/index.php?members/rotten-tomato.26818/)
+  * [GitHub Profile](https://github.com/tomato9946) | [YouTube Channel](https://www.youtube.com/channel/UCv2v5wErevqbt4HJkFUhe2A) | [Spaceflight Simulator Thailand Discord](https://discord.gg/SfTGQAhJJP) | [Forums Profile](https://sfsforum.com/index.php?members/rotten-tomato.26818/)
